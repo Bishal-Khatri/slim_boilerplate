@@ -18,7 +18,9 @@
         "monolog/monolog": "^1.17",
         "vlucas/phpdotenv": "^3.0",
         "illuminate/database": "^5.7",
-        "larapack/dd": "1.*"
+        "larapack/dd": "1.*",
+        "mongodb/mongodb": "^1.4",
+        "jenssegers/mongodb": "^3.5"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"

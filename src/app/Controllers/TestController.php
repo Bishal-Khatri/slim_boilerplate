@@ -12,7 +12,7 @@ class TestController
 
     public function index()
     {
-        $data = LetzgoApplication::first();
+        $data = LetzgoApplication::all();
         dd($data);
     }
 

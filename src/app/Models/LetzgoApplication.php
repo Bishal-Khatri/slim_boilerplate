@@ -1,9 +1,10 @@
 <?php
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class LetzgoApplication extends Model{
-    protected $table = 'letzgo_application';
+class LetzgoApplication extends Eloquent{
+//    protected $connection = 'db';
+    protected $table = 'consultancy_form';
 
 }

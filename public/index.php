@@ -29,7 +29,7 @@ $container = $app->getContainer();
 
 $capsule = new \Illuminate\Database\Capsule\Manager;
 
-$capsule->addConnection($container['settings']['db']);
+$capsule->addConnection($container['settings']['mongodb']);
 
 $capsule->setAsGlobal();
 
@@ -58,3 +58,6 @@ require __DIR__ . '/../src/routes.php';
 
 // Run app
 $app->run();
+$app->register(Jenssegers\Mongodb\MongodbServiceProvider::class);
+
+$app->withEloquent();
